@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import "tailwindcss/preflight" layer(base);
+@import "tailwindcss/utilities" layer(utilities);
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-zinc-50 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100 min-h-screen;
+}
+
+main {
+  @apply flex justify-center px-4 py-10;
+}
+
+@theme {
+  --color-blue-light: #F0F3FF;
+  --color-blue-dark: #0027A3;
+}
