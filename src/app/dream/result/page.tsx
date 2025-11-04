@@ -3,9 +3,11 @@ import Image from "next/image";
 import { useArtStore } from "@/store/artStore";
 import Header from "@/component/Header";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 export default function DreamResultPage() {
   const { artUrl, prompt } = useArtStore();
+  const router = useRouter();
 
   const handleDownload = async () => {
     try {
@@ -54,7 +56,7 @@ export default function DreamResultPage() {
         <GlowButton
           onClick={() => {
             useArtStore.getState().clearArt();
-            window.location.href = "/";
+            router.push("/");
           }}
         >
           처음으로
