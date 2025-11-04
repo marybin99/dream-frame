@@ -8,6 +8,28 @@ export const metadata: Metadata = {
 	icons: {
 		icon: `/dream-frame/favicon/favicon.ico`,
 	},
+  openGraph: {
+    title: "Dream Frame 🌙",
+    description: "당신의 꿈을 프레임에 담다. 나만의 꿈 기록 앱",
+    url: "https://marybin99.github.io/dream-frame/",
+    siteName: "Dream Frame",
+    images: [
+      {
+        url: "https://marybin99.github.io/dream-frame/og-image.png", // ✅ public 폴더 기준
+        width: 1200,
+        height: 630,
+        alt: "Dream Frame Preview",
+      },
+    ],
+    locale: "ko_KR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dream Frame 🌙",
+    description: "당신의 꿈을 프레임에 담다.",
+    images: ["https://marybin99.github.io/dream-frame/og-image.png"],
+  },
 };
 
 export default function RootLayout({
