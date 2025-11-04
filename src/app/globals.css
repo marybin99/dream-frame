@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  @apply bg-zinc-50 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100 min-h-screen;
+  @apply bg-white text-white min-h-screen;
 }
 
 main {
@@ -17,6 +17,21 @@ main {
 }
 
 @theme {
-  --color-blue-light: #F0F3FF;
-  --color-blue-dark: #0027A3;
+  --font-deokong: "DeokongPrincessOld", sans-serif; 
+  --font-daeam: "DaeAmLeeTaeJun", sans-serif; 
+}
+
+@font-face {
+  font-family: "DeokongPrincessOld";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/DeogonPrincessClassic.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'DaeAmLeeTaeJun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/DAEAM_LEE_TAE_JOON.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
 }

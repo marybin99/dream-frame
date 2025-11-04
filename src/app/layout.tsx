@@ -1,3 +1,4 @@
+import FlowingStars from "@/component/FlowingStars";
 import "./globals.css";
 
 export default function RootLayout({
@@ -7,17 +8,32 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body className="font-sans bg-gray-50">
+      <body className="font-daeam">
         <main
           className="
-            min-h-[calc(100svh)]
-            max-w-sm mx-auto
+            relative
+            h-[100svh]
+            max-w-md mx-auto
             px-4 py-6
-            bg-white
             flex flex-col
+            overflow-hidden
           "
+          style={{
+            backgroundImage: "url('/image/df.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            height: "100svh",
+          }}
         >
-          {children}
+          <FlowingStars />
+          {/* 검은색 반투명 오버레이 */}
+          <div
+            className="absolute inset-0 bg-black pointer-events-none opacity-20"
+            aria-hidden="true"
+          />
+          <div className="relative z-10 h-[calc(100svh)]">
+            {children}
+          </div>
         </main>
       </body>
     </html>
