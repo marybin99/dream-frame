@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 	title: "Dream Frame",
 	description: "당신의 꿈을 그림으로 기록하는 공간",
 	icons: {
-		icon: `${process.env.NEXT_PUBLIC_BASE_PATH}/favicon/favicon.ico`,
+		icon: `/favicon/favicon.ico`,
 	},
 };
 
@@ -31,7 +31,7 @@ export default function RootLayout({
             overflow-hidden
           "
           style={{
-            backgroundImage: `url('${process.env.NEXT_PUBLIC_BASE_PATH}/image/df.jpg')`,
+            backgroundImage: `url('/image/df.jpg')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             height: "100svh",

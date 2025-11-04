@@ -32,7 +32,7 @@ export default function DreamResultPage() {
     <div>
       <Header text={["✨ 당신의 꿈 ✨", <br key="linebreak" />, `${prompt}`]} />
       <Image
-        src={artUrl ?? "/image/placeholder.png"}
+        src={artUrl ?? "/dream-frame/image/placeholder.png"}
         alt="꿈 이미지"
         width={512}
         height={512}
